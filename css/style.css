@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #010202;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+.header {
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    padding-top: 56px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.user {
+    display: flex;
+    align-items:center
+}
+
+.user-name {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.app {
+    background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 90%);
+    min-height: 100vh;
+}
+.film {
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    padding-top: 201px;
+    height: calc(100% - 152px);
+    color:#FFFFFF;
+    line-height: 140%;
+    font-size: 16px;
+    
+}
+.film-logo {
+    margin-bottom: 18px;
+}
+.tags {
+    color: #E5E5E5;
+    opacity: 0.4;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tags > * {
+    margin-right: 15px;
+}
+
+.year {
+    opacity: 0.5;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+.description {
+    margin-top: 9px;
+    font-size: 21px;
+    line-height: 140%;
+    width: 460px;
+}
+.button {
+    background: #2F2F2F;
+    border-radius: 6px;
+    border: none;
+    padding: 11px 26px;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+.button-primary {
+    margin-right: 15px;
+    background: #EA6E20;
+}
+.button-icon {
+    margin-right: 10px;
+}
+/* 
+@media (max-width:1200px) {
+    .app {
+        background-size: 50%;
+    }
+} */
+
+@media (max-width:768px) {
+    .app {
+        height: auto;
+        padding-bottom: 400px;
+        background: url(../img/cover-image.jpg) no-repeat bottom center / 300px;
+    }
+    video {
+        display: none;
+    }
+    .film {
+        padding-top: 2%;
+    }
+    .film-logo {
+        max-width: 100%;
+    }
+    .description {
+        font-size: 16px;
+        max-width: 100%;
+    }
+   }
+
+@media (max-width:576px) {
+    .user-name {
+        display: none;
+    }
+    
+    .button {
+        margin-bottom: 10px;
+    }
+    .button-text {
+        display: none;
+    }
+    .app {
+        padding-bottom: 350px;
+        background-size:250px;
+
+    }
+}
