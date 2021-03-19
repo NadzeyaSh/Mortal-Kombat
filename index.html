@@ -36,7 +36,12 @@
             <!-- /.tags -->
             <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>
             <div class="button-group">
-                <button class="button button-primary">Предзаказ фильма</button>
+                <a href="#modal-1" class="button button-primary modal-inline">Предзаказ фильма</a>
+                <div id="modal-1" style="display: none;">
+                    <p><strong>Введите свой e-mail:</strong></p>
+                    <input type="text" name="email">
+                    <input type="button" value="Отправить" onclick="$.fancybox.close(); return false;">
+                </div>
                 <a data-fancybox href="https://www.youtube.com/watch?v=8CB0zkjHIaU" class="button button-default">
                     <img src="img/play-icon.png" alt="play-icon" class="button-icon">
                     <span class="button-text"> Смотреть трейлер</span>

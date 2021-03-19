@@ -7,3 +7,23 @@ $(document).ready(function () {
     });
     
 });
+
+$(function(){
+
+	$(".modal-inline").fancybox({
+		closeBtn: false,
+		modal: true,
+		margin: 0,
+		padding: 20,
+		maxWidth: 400,
+		autoScale: true,
+		transitionIn: 'none',
+		transitionOut: 'none',
+		type: 'inline',
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
+});
