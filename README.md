@@ -1,2 +1,2 @@
-# Mortal-Kombat
-Mortal Kombat
+# Mortal Kombat
+## Учебный проект
